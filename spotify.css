@@ -1,0 +1,94 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000; /* Spotify's main background is black */
+    color: #ffffff;
+    height: 100vh;
+    overflow: hidden; /* Prevents the whole page from scrolling */
+}
+
+/* Container taking up full screen */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Top Section taking remaining space above the player */
+.top-section {
+    display: flex;
+    flex: 1; /* Takes up all available height minus the player */
+    overflow: hidden;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 240px; /* Fixed width */
+    background-color: #000000;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    line-height: 2;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1; /* Takes up the rest of the width */
+    background: linear-gradient(to bottom, #2a2a2a, #121212); /* Spotify gradient */
+    border-radius: 8px; /* Modern Spotify web puts the main content in a rounded box */
+    margin: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden; /* Hide overflow on the wrapper */
+}
+
+.topbar {
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.content-scroll {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto; /* THIS allows only the main content to scroll */
+}
+
+/* Bottom Player Section */
+.now-playing-bar {
+    height: 90px; /* Fixed height for the player */
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-top: 1px solid #282828;
+}
+
+.song-info, .player-controls, .volume-controls {
+    flex: 1; /* Distributes space evenly */
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.volume-controls {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,185 @@
+.playlist-bg {
+  background-image: linear-gradient(to bottom, #191919 53%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.navbar-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.playlist-hero {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 30px 20px 20px 30px;
+  background-image: linear-gradient(to bottom, #393936 0%, rgba(57, 57, 50, 0.42) 100%);
+}
+
+.playlist-cover {
+  width: 198px;
+  height: 198px;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 30px 0px rgba(5, 5, 5, 0.61);
+}
+
+.playlist-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.playlist-label {
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.playlist-title {
+  font-weight: 900;
+  font-size: 74px;
+  line-height: 1.05;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.playlist-desc {
+  font-weight: 500;
+  font-size: 14px;
+  color: #bebebd;
+  margin-bottom: 10px;
+}
+
+.playlist-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-badge {
+  height: 21px;
+}
+
+.playlist-meta span {
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.playlist-meta .muted {
+  color: #bebebd;
+}
+
+.playlist-meta .dot {
+  font-weight: 900;
+}
+
+/* ---------- Controls ---------- */
+.playlist-controls {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 30px;
+}
+
+.play-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1ed760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #000000;
+}
+
+.icon-btn {
+  font-size: 24px;
+  color: #b3b3b3;
+}
+
+/* ---------- Track table ---------- */
+.track-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 24px;
+}
+
+.track-table thead tr {
+  border-bottom: 1px solid #2e2e2c;
+}
+
+.track-table thead th {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  color: #b3b3b3;
+  padding: 0 20px 12px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #191919;
+}
+
+.track-table thead th:first-child {
+  text-align: right;
+  padding-left: 44px;
+  width: 40px;
+}
+
+.track-table tbody tr {
+  border-radius: 4px;
+}
+
+.track-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.track-table tbody td {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.track-num {
+  text-align: right;
+  color: #ffffff;
+  font-weight: 700;
+  width: 40px;
+}
+
+.track-title-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.track-thumb {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.track-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.track-artist {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.track-duration-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  text-align: right;
+}

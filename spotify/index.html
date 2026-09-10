@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="https://www.figma.com/api/mcp/asset/ec37b5c0-bccf-4749-bdfd-dde09ec332bd.svg" alt="Spotify" />
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="index.html" class="menu-item active">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/656880c3-8d82-45dc-8061-34c691ea7ad6.svg" alt="" />
+          <span>Home</span>
+        </a>
+        <a href="#" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/f545afe1-2637-4b4d-b5e1-ee76a9d9e42f.svg" alt="" />
+          <span>Search</span>
+        </a>
+        <a href="#" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/78675cf4-d87b-4f6c-b2f5-ec4f788d1b88.svg" alt="" />
+          <span>Your Library</span>
+        </a>
+      </nav>
+
+      <nav class="sidebar-menu sidebar-menu-secondary">
+        <a href="#" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/3eb7685b-543e-4c25-9587-1329d4756c82.svg" alt="" />
+          <span>Create Playlist</span>
+        </a>
+        <a href="playlist.html" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/f16c6272-1cda-4f6c-ab7d-9a3748af3e68.svg" alt="" />
+          <span>Liked Songs</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="footer-links">
+          <div class="footer-row">
+            <span>Legal</span>
+            <span>Privacy Center</span>
+            <span>Privacy Policy</span>
+          </div>
+          <div class="footer-row">
+            <span>Cookies</span>
+            <span>About</span>
+            <span>Ads</span>
+          </div>
+        </div>
+        <button class="lang-btn">
+          <img src="https://www.figma.com/api/mcp/asset/cc3c64aa-6973-453c-a476-ec712580cf47.svg" alt="" />
+          <span>English</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content home-bg">
+
+      <header class="navbar">
+        <button class="btn btn-secondary">Sign up</button>
+        <button class="btn btn-primary">Log in</button>
+      </header>
+
+      <!-- Focus Section -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Focus</h2>
+          <span class="show-all">Show all</span>
+        </div>
+
+        <div class="card-row">
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/8ad20a66-0fc3-4f87-b458-8c724cf8e91e.png" alt="Peaceful Piano" />
+            <div class="card-text">
+              <p class="card-title">Peaceful Piano</p>
+              <p class="card-desc">Peaceful piano to help you slow down, breathe, and...</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/67d79433-babd-4d20-a5f2-d28781f57f75.png" alt="Deep Focus" />
+            <div class="card-text">
+              <p class="card-title">Deep Focus</p>
+              <p class="card-desc">Keep calm and focus with ambient and post-rock music.</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/826c48fb-aa85-42a7-9f67-13f873f68ce4.png" alt="Instrumental Study" />
+            <div class="card-text">
+              <p class="card-title">Instrumental Study</p>
+              <p class="card-desc">Focus with soft study music in the background.</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/12372e6f-4ab3-4d8f-951f-0bd7666a20ce.png" alt="Focus Flow" />
+            <div class="card-text">
+              <p class="card-title">Focus Flow</p>
+              <p class="card-desc">Uptempo instrumental hip hop beats.</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/36a2fb81-6840-4d38-8eeb-22a25e78b5cf.png" alt="Beats to think to" />
+            <div class="card-text">
+              <p class="card-title">Beats to think to</p>
+              <p class="card-desc">Focus with deep techno and tech house.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Spotify Playlists Section -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Spotify Playlists</h2>
+          <span class="show-all">Show all</span>
+        </div>
+
+        <div class="card-row">
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/f76b52b3-75bf-4dc1-9e6e-25333c4766fc.png" alt="Today's Top Hits" />
+            <div class="card-text">
+              <p class="card-title">Today&rsquo;s Top Hits</p>
+              <p class="card-desc">Harry Styles is on top of the Hottest 50!</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/a8b88322-722a-45d9-9c94-c11c89546f91.png" alt="RapCaviar" />
+            <div class="card-text">
+              <p class="card-title">RapCaviar</p>
+              <p class="card-desc">New music from Lil Baby, Gucci Mane and DaBaby.</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/149b6d5b-a086-4b26-aba8-e1803ef88e07.png" alt="All Out 2010s" />
+            <div class="card-text">
+              <p class="card-title">All Out 2010s</p>
+              <p class="card-desc">The biggest songs of the 2010s.</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/96762d7f-19d6-4ed0-8937-2c4800471f08.png" alt="Rock Classics" />
+            <div class="card-text">
+              <p class="card-title">Rock Classics</p>
+              <p class="card-desc">Rock legends &amp; epic songs that continue to inspire...</p>
+            </div>
+          </a>
+
+          <a href="playlist.html" class="card">
+            <img class="card-img" src="https://www.figma.com/api/mcp/asset/fa129ffb-f071-4c26-9d16-4ac3400364e7.png" alt="Chill Hits" />
+            <div class="card-text">
+              <p class="card-title">Chill Hits</p>
+              <p class="card-desc">Kick back to the best new and recent chill hits.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

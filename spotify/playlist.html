@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Focus - Spotify Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="playlist.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="https://www.figma.com/api/mcp/asset/ec37b5c0-bccf-4749-bdfd-dde09ec332bd.svg" alt="Spotify" />
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="index.html" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/656880c3-8d82-45dc-8061-34c691ea7ad6.svg" alt="" />
+          <span>Home</span>
+        </a>
+        <a href="#" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/f545afe1-2637-4b4d-b5e1-ee76a9d9e42f.svg" alt="" />
+          <span>Search</span>
+        </a>
+        <a href="#" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/78675cf4-d87b-4f6c-b2f5-ec4f788d1b88.svg" alt="" />
+          <span>Your Library</span>
+        </a>
+      </nav>
+
+      <nav class="sidebar-menu sidebar-menu-secondary">
+        <a href="#" class="menu-item">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/3eb7685b-543e-4c25-9587-1329d4756c82.svg" alt="" />
+          <span>Create Playlist</span>
+        </a>
+        <a href="playlist.html" class="menu-item active">
+          <img class="menu-icon" src="https://www.figma.com/api/mcp/asset/f16c6272-1cda-4f6c-ab7d-9a3748af3e68.svg" alt="" />
+          <span>Liked Songs</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="footer-links">
+          <div class="footer-row">
+            <span>Legal</span>
+            <span>Privacy Center</span>
+            <span>Privacy Policy</span>
+          </div>
+          <div class="footer-row">
+            <span>Cookies</span>
+            <span>About</span>
+            <span>Ads</span>
+          </div>
+        </div>
+        <button class="lang-btn">
+          <img src="https://www.figma.com/api/mcp/asset/cc3c64aa-6973-453c-a476-ec712580cf47.svg" alt="" />
+          <span>English</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content playlist-bg">
+
+      <header class="navbar navbar-overlay">
+        <button class="btn btn-secondary">Sign up</button>
+        <button class="btn btn-primary">Log in</button>
+      </header>
+
+      <!-- Playlist Hero -->
+      <section class="playlist-hero">
+        <div class="playlist-cover">
+          <img src="https://www.figma.com/api/mcp/asset/ed2b12c6-7243-4e69-9878-155e9d05ad6a.png" alt="Deep Focus" />
+        </div>
+        <div class="playlist-info">
+          <p class="playlist-label">Playlist</p>
+          <h1 class="playlist-title">Deep Focus</h1>
+          <p class="playlist-desc">Keep calm and focus with ambient and post-rock music.</p>
+          <div class="playlist-meta">
+            <img class="meta-badge" src="https://www.figma.com/api/mcp/asset/bbcc16f1-665b-4d7a-aa3d-15b1ea75654f.svg" alt="Spotify" />
+            <span class="dot">・</span>
+            <span>3,940,865 likes</span>
+            <span class="dot">・</span>
+            <span>252 songs,</span>
+            <span class="muted">about 10 hr</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Controls -->
+      <div class="playlist-controls">
+        <button class="play-btn">&#9658;</button>
+        <button class="icon-btn">&#9825;</button>
+        <button class="icon-btn">&#8943;</button>
+      </div>
+
+      <!-- Track table -->
+      <table class="track-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Album</th>
+            <th>Date added</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="track-num">1</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/e4617e4e-a952-4f8d-af61-f501f81abb06.png" alt="" />
+                <div>
+                  <div class="track-name">So Far So Good</div>
+                  <div class="track-artist">Sun Of They</div>
+                </div>
+              </div>
+            </td>
+            <td>Silent Hills</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:31</td>
+          </tr>
+          <tr>
+            <td class="track-num">2</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/43963818-81f3-4884-a734-e945825a8ac6.png" alt="" />
+                <div>
+                  <div class="track-name">Apricity</div>
+                  <div class="track-artist">Imala Zir</div>
+                </div>
+              </div>
+            </td>
+            <td>Apricity</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:38</td>
+          </tr>
+          <tr>
+            <td class="track-num">3</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/1c1ba569-2a42-49b4-bd3b-49b7355d1077.png" alt="" />
+                <div>
+                  <div class="track-name">Solatium</div>
+                  <div class="track-artist">Imber Sun</div>
+                </div>
+              </div>
+            </td>
+            <td>Solatium</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:06</td>
+          </tr>
+          <tr>
+            <td class="track-num">4</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/a63b4b9e-9180-42e1-801f-023406b7b15c.png" alt="" />
+                <div>
+                  <div class="track-name">efflorescence</div>
+                  <div class="track-artist">Far &amp; Beyond</div>
+                </div>
+              </div>
+            </td>
+            <td>efflorescence</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:23</td>
+          </tr>
+          <tr>
+            <td class="track-num">5</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/fa9c0481-7f19-4734-aad4-13598e7c7f53.png" alt="" />
+                <div>
+                  <div class="track-name">Gather My Thoughts</div>
+                  <div class="track-artist">Josef Briem</div>
+                </div>
+              </div>
+            </td>
+            <td>Gather My Thoughts</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">3:03</td>
+          </tr>
+          <tr>
+            <td class="track-num">6</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/23134a3f-ab47-481c-b0e4-898649482604.png" alt="" />
+                <div>
+                  <div class="track-name">Fresh Paint</div>
+                  <div class="track-artist">Shape Of Our Dreams</div>
+                </div>
+              </div>
+            </td>
+            <td>Mind games</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:34</td>
+          </tr>
+          <tr>
+            <td class="track-num">7</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/3b108ea1-3264-459f-bf16-1dfb20cd6c89.png" alt="" />
+                <div>
+                  <div class="track-name">Infinite Sustain</div>
+                  <div class="track-artist">Amaranth Cove</div>
+                </div>
+              </div>
+            </td>
+            <td>Infinite Sustain</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:29</td>
+          </tr>
+          <tr>
+            <td class="track-num">8</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/55c199c2-7fa8-4a41-bc35-de5fef3e04e0.png" alt="" />
+                <div>
+                  <div class="track-name">Borealis</div>
+                  <div class="track-artist">PLACID</div>
+                </div>
+              </div>
+            </td>
+            <td>Borealis</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">1:45</td>
+          </tr>
+          <tr>
+            <td class="track-num">9</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/bea66e05-4d8f-4532-add5-f1d8c4af1137.png" alt="" />
+                <div>
+                  <div class="track-name">mind reader</div>
+                  <div class="track-artist">Haltura Arnadottir</div>
+                </div>
+              </div>
+            </td>
+            <td>Number Games</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:49</td>
+          </tr>
+          <tr>
+            <td class="track-num">10</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/3e19c22a-e722-42d4-9770-828c29f88b71.png" alt="" />
+                <div>
+                  <div class="track-name">Bridges</div>
+                  <div class="track-artist">Woven Hearts</div>
+                </div>
+              </div>
+            </td>
+            <td>Bridges</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:45</td>
+          </tr>
+          <tr>
+            <td class="track-num">11</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/3b2ee99b-6491-43e8-b76d-4a1493401964.png" alt="" />
+                <div>
+                  <div class="track-name">Mind over matter</div>
+                  <div class="track-artist">Josef Briem</div>
+                </div>
+              </div>
+            </td>
+            <td>Mind over matter</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:33</td>
+          </tr>
+          <tr>
+            <td class="track-num">12</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/7084cf6c-3782-4d62-840c-bf8a71a78d23.png" alt="" />
+                <div>
+                  <div class="track-name">Getting Closer</div>
+                  <div class="track-artist">Pireas</div>
+                </div>
+              </div>
+            </td>
+            <td>Getting Closer</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">1:47</td>
+          </tr>
+          <tr>
+            <td class="track-num">13</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/8cd141ff-f115-451d-a74f-d2af1444b3a4.png" alt="" />
+                <div>
+                  <div class="track-name">Infra</div>
+                  <div class="track-artist">Tiger Throws</div>
+                </div>
+              </div>
+            </td>
+            <td>Infra</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:20</td>
+          </tr>
+          <tr>
+            <td class="track-num">14</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/5e8e12e6-4866-44bb-be24-10ca7c954ccb.png" alt="" />
+                <div>
+                  <div class="track-name">Whispering</div>
+                  <div class="track-artist">Space Access</div>
+                </div>
+              </div>
+            </td>
+            <td>Whispering</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:12</td>
+          </tr>
+          <tr>
+            <td class="track-num">15</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/17c1f2b2-4785-472b-8c9f-b9d243750de9.png" alt="" />
+                <div>
+                  <div class="track-name">bounce back</div>
+                  <div class="track-artist">Far &amp; Beyond</div>
+                </div>
+              </div>
+            </td>
+            <td>bounce back</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:58</td>
+          </tr>
+          <tr>
+            <td class="track-num">16</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/5842ec8b-ea21-4b03-b287-5569303c479c.png" alt="" />
+                <div>
+                  <div class="track-name">Distance</div>
+                  <div class="track-artist">Ben Tofft</div>
+                </div>
+              </div>
+            </td>
+            <td>Distance</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">2:11</td>
+          </tr>
+          <tr>
+            <td class="track-num">17</td>
+            <td>
+              <div class="track-title-cell">
+                <img class="track-thumb" src="https://www.figma.com/api/mcp/asset/1b621ce4-3af1-4368-85f7-8003c0eaaaef.png" alt="" />
+                <div>
+                  <div class="track-name">Lift</div>
+                  <div class="track-artist">GLADE</div>
+                </div>
+              </div>
+            </td>
+            <td>Lift</td>
+            <td>1 week ago</td>
+            <td class="track-duration-cell">1:56</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </main>
+  </div>
+
+</body>
+</html>
